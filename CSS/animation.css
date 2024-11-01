@@ -113,8 +113,10 @@ h3 {
 .translate {
   transform: translate(100px, 50px);
 }
-
 /* || ROTATE METHODS */
+.rotateZ {
+  transform: rotateZ(45deg);
+}
 @media screen and (min-width: 476px) {
   body {
     display: flex;
