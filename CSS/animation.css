@@ -17,7 +17,7 @@ img {
 /* || VARIABLES */
 :root {
   --BOX-PADDING: 1rem;
-  --BOX-BORDER: 2px solid black;
+  --BOX-BORDER: 5px solid #0000008e;
   --FF: "Open Sans", Sans-serif;
   --BOX-COLOR: hsla(11, 24%, 72%, 0.5);
   --BOX-COLOR-LIGHT: hsl(11, 24%, 90%);
@@ -41,11 +41,13 @@ ol li {
   padding-left: 1rem;
 }
 section {
-  border: var(--BOX-BORDER);
   background-color: var(--SECTION-COLOR);
   padding: var(--BOX-PADDING);
   display: grid;
-  place-items: center;
+  align-items: start;
+  justify-items: center;
+  min-height: 80vh;
+  position: relative;
 }
 h3 {
   justify-self: start;
@@ -53,31 +55,32 @@ h3 {
 .square {
   height: 200px;
   width: 200px;
-  border: var(--BOX-BORDER);
   padding: var(--BOX-PADDING);
+  margin: 1rem;
   font-family: var(--FF);
   font-size: 1rem;
+  color: white;
   background-color: var(--BOX-COLOR);
-  color: var(--BG-COLOR);
+  border: var(--BOX-BORDER);
+
   display: grid;
   place-content: center;
-  margin: 1rem;
   position: absolute;
-  bottom: auto;
+  top: 50px;
   z-index: 1;
 }
 .original {
+  color: var(--UNIMP-TEXT);
   border: 5px dashed var(--OUTLINE);
   background-color: var(--BOX-COLOR-LIGHT);
-  position: relative;
 }
 /* || translate methods */
 .translateX-R {
-  transform: translateX(250px);
+  transform: translateX(350px);
 }
 .translateX-L {
   transform: translateX(-250px);
 }
-.translateX-100per {
-  transform: translateX(50%);
+.translateX-70per {
+  transform: translateX(70%);
 }
