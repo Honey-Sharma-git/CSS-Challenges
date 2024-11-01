@@ -31,14 +31,25 @@ img {
   --TAP: hsla(0, 0%, 70%, 0.2);
 }
 /* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
 body {
   padding: 1rem;
   color: var(--TEXT);
   background-color: var(--BG-COLOR);
 }
+a:any-link {
+  color: var(--LINKS);
+  text-decoration: none;
+}
 ol,
 ol li {
   padding-left: 1rem;
+}
+aside {
+  background-color: var(--SECTION-COLOR);
+  padding: var(--BOX-PADDING);
 }
 section {
   background-color: var(--SECTION-COLOR);
@@ -76,7 +87,7 @@ h3 {
   border: 5px dashed var(--OUTLINE);
   background-color: var(--BOX-COLOR-LIGHT);
 }
-/* || translate methods */
+/* || TRANSLATE METHODS */
 .translateX-R {
   transform: translateX(350px);
 }
@@ -95,3 +106,5 @@ h3 {
 .translate {
   transform: translate(100px, 50px);
 }
+
+/* || ROTATE METHODS */
