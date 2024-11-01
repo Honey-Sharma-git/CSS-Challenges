@@ -48,6 +48,7 @@ section {
   justify-items: center;
   min-height: 80vh;
   position: relative;
+  margin: 0.5em 0rem;
 }
 h3 {
   justify-self: start;
@@ -59,6 +60,7 @@ h3 {
   margin: 1rem;
   font-family: var(--FF);
   font-size: 1rem;
+  text-align: center;
   color: white;
   background-color: var(--BOX-COLOR);
   border: var(--BOX-BORDER);
@@ -83,4 +85,13 @@ h3 {
 }
 .translateX-70per {
   transform: translateX(70%);
+}
+.translateY-U {
+  transform: translateY(-120px);
+}
+.translateY-D {
+  transform: translateY(120px);
+}
+.translate {
+  transform: translate(100px, 50px);
 }
