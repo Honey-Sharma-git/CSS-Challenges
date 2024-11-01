@@ -47,7 +47,7 @@ section {
   display: grid;
   place-items: center;
 }
-h3{
+h3 {
   justify-self: start;
 }
 .square {
@@ -62,18 +62,22 @@ h3{
   display: grid;
   place-content: center;
   margin: 1rem;
+  position: absolute;
+  bottom: auto;
+  z-index: 1;
 }
-.original{
-  border:5px dashed var(--OUTLINE);
+.original {
+  border: 5px dashed var(--OUTLINE);
   background-color: var(--BOX-COLOR-LIGHT);
+  position: relative;
 }
 /* || translate methods */
 .translateX-R {
-  transform: translateX(50px);
+  transform: translateX(250px);
 }
 .translateX-L {
-  transform: translate(-50px);
+  transform: translateX(-250px);
 }
-.translateX-50per {
+.translateX-100per {
   transform: translateX(50%);
 }
