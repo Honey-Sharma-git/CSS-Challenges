@@ -1,0 +1,22 @@
+/* || CSS RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  outline: 1px solid red;
+  background-color: hsla(0, 100%, 50%, 0.05);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+/* || VARIABLES */
+:root {
+  --BOX-PADDING: 1rem;
+  --BOX-BORDER: 2px solid black;
+  --FF: "Open Sans", Sans-serif;
+}
+/* || GENERAL STYLES */
