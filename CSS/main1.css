@@ -1,0 +1,89 @@
+/*Begin Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+/*End Reset*/
+
+/*Utility Classes Begin*/
+.nowrap {
+  white-space: nowrap;
+}
+.offscreen {
+  position: absolute;
+  left: -100000px;
+}
+.container {
+  background-color: aqua;
+  background-image: url("../Image/pat1.png");
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+}
+/*Utility Classes Ends*/
+body {
+  min-height: 100vh;
+  /*  background-image: url(../Image/pat1.jpg),
+    linear-gradient(to top, red, white, green);
+  background-position: left, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 500px 200px, 50% 100%; */
+}
+.profile-pic-figure {
+  width: 35%;
+  /* outline: 10px solid red; */
+}
+.profile-pic-figure img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+  border: 1vw solid gray;
+  border-radius: 50%;
+}
+.hero {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+.h1 {
+  font-size: 500%;
+  color: whitesmoke;
+  font-family: Oxygen, sans-serif;
+  text-shadow: 2px 2px 5px #000;
+  /* background-color: hsla(0, 0%, 0%, 0.288);
+  padding: 10px;
+  border-radius: 10px; */
+}
+
+.example {
+  margin-top: 1rem;
+  padding-left: 20px;
+  border: solid 1px red;
+}
+.example img {
+  width: 25%; /*25% of the parent element*/
+  height: auto;
+}
+.clip {
+  font-weight: 800;
+  font-size: 18rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(../Image/scene.jpg);
+  background-size: 100%;
+  background-clip: text;
+  background-attachment: fixed;
+  color: hsla(0, 100%, 50%, 0.527);
+  color: transparent;
+  /*brown colored cows imagine red apples perfectly
+  background: color clip image repeat attachment position*/
+}

@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
+}
+
+.outer-container {
+  height: 85vh;
+  width: 75vw;
+  margin: 40px auto;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: black;
+}
+.inner-container {
+  border: 2px solid blue;
+  width: 40vw;
+  height: 50vh;
+  /* margin: 0px auto; */
+  margin: 200px auto;
+  /* position: fixed;
+  top:0;
+  left:0; */
+}
+.box {
+  height: 120px;
+  width: 120px;
+  color: white;
+  padding: 1rem;
+}
+
+.absolute {
+  background-color: #00f;
+  position: absolute;
+  top: 0;
+  /* bottom: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  top: 10px;
+  left: 10px;
+  /* top:50%; */
+}
+.relative {
+  background-color: green;
+  position: relative;
+  top: 10px;
+  /* top:-20px; */
+  left: 30px;
+  left: 40%;
+}
+.fixed {
+  background-color: red;
+}
+.sticky {
+  background-color: yellow;
+  color: black;
+  position: sticky;
+  top: 100px;
+}
+.textOnImage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+img {
+  width: 500px;
+  height: auto;
+}
+figure {
+  position: relative;
+  display: inline-block;
+  border: 1px solid red;
+}
+.text {
+  font-size: 3rem;
+  color: white;
+  font-weight: 900;
+  text-shadow: 2px 2px 5px black;
+  z-index: 1;
+}
+.topLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.bottomLeft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.topRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.bottomRight {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.centered {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+}

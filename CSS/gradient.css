@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+body {
+  font-family: Nunito, sans-serif;
+  font-size: 1.5rem;
+}
+.linear-gradient-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: lightskyblue;
+  padding: 1rem;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  height: 160px;
+  width: 160px;
+  border: 0.5px solid black;
+  border-radius: 20%;
+  background-color: rgb(255, 241, 224);
+}
+.box p {
+  color: aliceblue;
+}
+.default-gradient {
+  background-image: linear-gradient(red, blue);
+}
+.toRight {
+  background-image: linear-gradient(to right, red, blue);
+}
+.toLeft {
+  background-image: linear-gradient(to left, red, blue);
+}
+.toTop {
+  background-image: linear-gradient(to Top, red, blue);
+}
+.toBottom {
+  background-image: linear-gradient(to bottom, red, blue);
+}
+.atAngle {
+  background-image: linear-gradient(45deg, red, blue);
+}
+.atNegAngle {
+  background-image: linear-gradient(-45deg, red, blue);
+}
+.threeColors {
+  background-image: linear-gradient(red, pink, blue);
+}
+.rainbow {
+  background-image: linear-gradient(
+    to top,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+}
+.colorStopRed-50 {
+  background-image: linear-gradient(red 50%, blue);
+}
+.colorStopBlue-50 {
+  background-image: linear-gradient(red, blue 50%);
+}
+
+.linear-gradient-sharp-transition {
+  background-image: linear-gradient(red 0%, red 70%, blue 70%, blue 100%);
+}
+.linear-gradient-repeating {
+  background-image: repeating-linear-gradient(red 80%, blue);
+}
+.linear-gradient-transparency {
+  background-color: white;
+  background-image: linear-gradient(red, rgba(255, 0, 0, 0.293));
+}
+/*Radial Gradients*/
+.boxForSize {
+  color: aliceblue;
+  text-decoration: underline double;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  height: 160px;
+  width: 260px;
+  border: 0.5px solid black;
+  border-radius: 20%;
+  background-color: rgb(255, 241, 224);
+}
+.radial-gradient-container {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.radial-gradient-default {
+  background-image: radial-gradient(red, blue);
+}
+.radial-gradient-default-invert {
+  background-image: radial-gradient(blue, red);
+}
+
+.radial-gradient-ellipse {
+  background-image: radial-gradient(ellipse, red, blue);
+  width: 200px;
+}
+.radial-gradient-circle {
+  background-image: radial-gradient(circle, red, blue);
+  width: 200px;
+}
+.radial-gradient-atTop {
+  background-image: radial-gradient(at top, red, blue);
+}
+.radial-gradient-atBottom {
+  background-image: radial-gradient(at bottom, red, blue);
+}
+.radial-gradient-atLeft {
+  background-image: radial-gradient(at left, red, blue);
+}
+.radial-gradient-atRight {
+  background-image: radial-gradient(at Right, red, blue);
+}
+.radial-gradient-atTopRight {
+  background-image: radial-gradient(at Right top, red, blue);
+}
+.radial-gradient-atTopLeft {
+  background-image: radial-gradient(at Left top, red, blue);
+}
+.radial-gradient-atBottomLeft {
+  background-image: radial-gradient(at bottom left, red, blue);
+}
+.radial-gradient-atBottomRight {
+  background-image: radial-gradient(at bottom Right, red, blue);
+}
+.radial-gradient-40px40px {
+  background-image: radial-gradient(50px at 40px 40px, red, blue);
+}
+
+.radial-gradient-farthest-corner {
+  background-image: radial-gradient(circle farthest-corner, red, blue);
+}
+.radial-gradient-farthest-side {
+  background-image: radial-gradient(circle farthest-side, red, blue);
+}
+.radial-gradient-closest-corner {
+  background-image: radial-gradient(circle closest-corner, red, blue);
+}
+.radial-gradient-closest-side {
+  background-image: radial-gradient(circle closest-side, red, blue);
+}
+.radial-gradient-150px {
+  background-image: radial-gradient(150px, red, blue);
+}
+.radial-gradient-30px {
+  background-image: radial-gradient(30px, red, blue);
+}
+.radial-gradient-red40 {
+  background-image: radial-gradient(red 40%, blue);
+}
+.radial-gradient-blue40 {
+  background-image: radial-gradient(red, blue 40%);
+}
+.radial-gradient-red50-blue50 {
+  background-image: radial-gradient(circle, red 50%, blue 50%);
+}
+.radial-gradient-repeating {
+  background-image: repeating-radial-gradient(
+    circle,
+    red 0%,
+    red 10%,
+    blue 10%,
+    blue 20%
+  );
+}
+.radial-gradient-transparency {
+  background-color: white;
+  background-image: radial-gradient(circle, red, rgba(255, 0, 0, 0.293));
+}

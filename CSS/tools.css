@@ -1,0 +1,46 @@
+/* || CSS RESET */
+*,
+*::after,
+*::before {
+  outline: 2px solid lime;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsla(0, 100%, 50%, 0.1);
+}
+img {
+  display: block;
+}
+
+/* || GENERAL STYLES */
+
+.btn {
+  width: 20vw;
+  aspect-ratio: 2/1;
+  border-radius: 100px;
+  background-color: #a52a2a;
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+  position: relative;
+}
+.btn p {
+  display: none;
+}
+.btn:hover p {
+  width: max-content;
+  display: block;
+  position: absolute;
+  bottom: -60px;
+  left: 100px;
+  background-color: hsl(0, 0%, 0%);
+  background-color: hsla(0, 0%, 0%, 0.4);
+  color: white;
+  font-size: 1rem;
+}
+q{
+  quotes: "+" "+";
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="CSS/position.css" />
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="box absolute">
+          <p>absolute</p>
+        </div>
+        <div class="box relative">
+          <p>relative</p>
+        </div>
+        <div class="box fixed">
+          <p>fixed</p>
+        </div>
+        <div class="box sticky">
+          <p>sticky</p>
+        </div>
+      </div>
+    </div>
+    <section class="textOnImage">
+      <p>Different position of text on image:</p>
+      <figure>
+        <div class="topLeft text">Top Left</div>
+        <img
+          src="Image/scene.jpg"
+          alt="Scene"
+          height="681"
+          width="1000"
+          loading="lazy"
+        />
+      </figure>
+      <figure>
+        <img
+          src="Image/scene.jpg"
+          alt="Scene"
+          height="681"
+          width="1000"
+          loading="lazy"
+        />
+        <div class="bottomLeft text">Bottom Left</div>
+      </figure>
+      <figure>
+        <img
+          src="Image/scene.jpg"
+          alt="Scene"
+          height="681"
+          width="1000"
+          loading="lazy"
+        />
+        <div class="bottomRight text">Bottom Right</div>
+      </figure>
+      <figure>
+        <img
+          src="Image/scene.jpg"
+          alt="Scene"
+          height="681"
+          width="1000"
+          loading="lazy"
+        />
+        <div class="topRight text">Top Right</div>
+      </figure>
+      <figure>
+        <img
+          src="Image/scene.jpg"
+          alt="Scene"
+          height="681"
+          width="1000"
+          loading="lazy"
+        />
+        <div class="centered text">Centered</div>
+      </figure>
+    </section>
+  </body>
+</html>

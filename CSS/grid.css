@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/*CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px yellow solid; */
+}
+/*Utility classes begin here*/
+
+.fullPageHeight {
+  height: 100vh;
+}
+.rGrad {
+  background-image: radial-gradient(circle at left, red, blue);
+}
+.rGradInvert {
+  background-image: radial-gradient(circle at left, blue, red);
+}
+/*Utility classes end here*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+
+  grid-auto-rows: minmax(70px, auto) auto 70px;
+  grid-template-areas:
+    "hd hd"
+    "mn as"
+    "ft ft";
+}
+.header {
+  grid-area: hd;
+  background-color: red;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, 100px);
+  column-gap: 50px;
+  row-gap: 20px;
+  position: sticky;
+  top: 0;
+}
+.header a {
+  color: white;
+  font-size: 2rem;
+}
+.main {
+  grid-area: mn;
+  background-color: blue;
+}
+.aside {
+  grid-area: as;
+  background-color: green;
+}
+.footer {
+  grid-area: ft;
+  background-color: black;
+  color: white;
+  position: sticky;
+  bottom: 0;
+}
+.card {
+  background-color: white;
+  color: black;
+  height: 80px;
+  width: 80px;
+  display: grid;
+  place-content: center;
+  border: 2px black solid;
+  border-radius: 8px;
+}
+.card-container {
+  border: 2px solid yellow;
+  display: grid;
+  place-content: center;
+  grid-template-columns: repeat(auto-fit, 100px);
+  grid-template-rows: repeat(5, 100px);
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .aside {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+  }
+}

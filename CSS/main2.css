@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* || CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+}
+/* ||GENERAL STYLES */
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  min-height: 100vh;
+  background-color: yellow;
+  /* background-image: radial-gradient(circle 150px at center, red, blue, green); */
+}
+/* || SMALL*/
+@media screen and (min-width: 576px) {
+  body {
+    background-color: blue;
+  }
+}
+/* || MEDIUM*/
+@media screen and (min-width: 768px) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+/* || ORIENTATION*/
+@media screen and (min-width: 1000px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: green;
+    color: white;
+  }
+}
+.grad {
+  height: 50vh;
+  width: 50vw;
+  background-image: radial-gradient(
+    ellipse 50vw 40px at bottom,
+    red,
+    yellow,
+    green
+  );
+}
+.grad1 {
+  height: 50vh;
+  width: 50vw;
+  display: block;
+  background-image: conic-gradient(
+    red 0deg,
+    green 90deg,
+    yellow 90deg,
+    blue 90deg
+  );
+}
+.pieChart {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  background-image: linear-gradient(90deg, red 10%, blue 100%);
+}
