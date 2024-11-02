@@ -211,6 +211,28 @@ h3 {
 .shifted-origin {
   transform-origin: 300px 200px;
 }
+
+/* || TRANSFORM-STYLE PERSPECTIVE */
+.parent {
+  background-color: pink;
+  height: 20vw;
+  width: 20vw;
+  transform: rotateY(45deg);
+  perspective: 800px;
+  perspective-origin: 200px;
+  transform-style: preserve-3d;
+  color:black;
+  font-size: 2rem;
+}
+.child {
+  background-color: gray;
+  height: 20vw;
+  width: 20vw;
+  transform: rotateX(45deg);
+  color:black;
+  font-size: 2rem;
+  
+}
 @media screen and (min-width: 476px) {
   body {
     display: flex;
