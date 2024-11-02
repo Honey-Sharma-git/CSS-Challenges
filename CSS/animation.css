@@ -170,7 +170,10 @@ h3 {
 .matrix {
   transform: matrix(0, 0, 0, 0, 40, 30);
 }
-
+.transform-combinations {
+  transform: scaleX(0.6) skewY(10deg) skewX(20deg) scaleY(1.3) translateX(200px)
+    translateY(50px);
+}
 /* || TRANSFORM-ORIGIN PROPERTY */
 .transition {
   transition: transform 2s;
