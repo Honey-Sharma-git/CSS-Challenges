@@ -221,7 +221,7 @@ h3 {
   perspective: 800px;
   perspective-origin: 200px;
   transform-style: preserve-3d;
-  color:black;
+  color: black;
   font-size: 2rem;
 }
 .child {
@@ -229,9 +229,74 @@ h3 {
   height: 20vw;
   width: 20vw;
   transform: rotateX(45deg);
-  color:black;
+  color: black;
   font-size: 2rem;
-  
+}
+/* || TRANSITION PROPERTY */
+.box {
+  height: 100px;
+  width: 100px;
+  padding: var(--BOX-PADDING);
+  margin: 1rem;
+  font-family: var(--FF);
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  color: black;
+  background-color: var(--BOX-COLOR);
+  border: var(--BOX-BORDER);
+  display: grid;
+  place-content: center;
+}
+.box-width {
+  width: 100px;
+  transition: width 2s;
+}
+.box-width:hover {
+  width: 200px;
+}
+.box-width-height {
+  width: 100px;
+  height: 100px;
+  transition: width 2s, height 4s;
+}
+.box-width-height:hover {
+  width: 200px;
+  height: 200px;
+}
+.box-background-color {
+  background-color: var(--BOX-COLOR);
+  transition: background-color 2s;
+}
+.box-background-color:hover {
+  background-color: pink;
+}
+.box-color-fontsize {
+  color: black;
+  font-size: 1rem;
+  transition: color 3s, font-size 4s;
+}
+.box-color-fontsize:hover {
+  color: white;
+  font-size: 0.2rem;
+}
+.box-height-width-color-background-color-fontsize-rotate-translate {
+  height: 100px;
+  width: 100px;
+  color: black;
+  background-color: var(--BOX-COLOR);
+  font-size: 1rem;
+
+  transition: height 4s, width 4s, font-size 3s, background-color 2s, color 2s,
+    transform 5s;
+}
+.box-height-width-color-background-color-fontsize-rotate-translate:hover {
+  height: 200px;
+  width: 200px;
+  color: green;
+  background-color: pink;
+  font-size: 0.6rem;
+  transform: rotateZ(360deg) translateX(200px);
 }
 @media screen and (min-width: 476px) {
   body {
