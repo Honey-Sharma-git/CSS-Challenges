@@ -47,10 +47,10 @@ ol,
 ol li {
   padding-left: 1rem;
 }
-.backToTop{
-  position:fixed;
-  bottom:20px;
-  right:10px;
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
   z-index: 2;
 }
 aside {
@@ -72,6 +72,7 @@ h1 {
 }
 h2 {
   background-color: var(--SECTION-COLOR);
+  padding: var(--BOX-PADDING);
 }
 h3 {
   justify-self: start;
@@ -129,8 +130,24 @@ h3 {
 .rotateZ {
   transform: rotateZ(45deg);
 }
-.rotate{
-  transform:rotate(45deg);
+.rotate {
+  transform: rotate(45deg);
+}
+/* || SCALE METHODS */
+.scaleX-up {
+  transform: scaleX(2);
+}
+.scaleX-down {
+  transform: scaleX(0.5);
+}
+.scaleY-up {
+  transform: scaleY(2);
+}
+.scaleY-down {
+  transform: scaleY(0.5);
+}
+.scale-up {
+  transform: scale(1.5, 2);
 }
 @media screen and (min-width: 476px) {
   body {
