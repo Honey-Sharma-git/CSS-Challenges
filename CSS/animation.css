@@ -67,7 +67,7 @@ section {
   display: grid;
   align-items: start;
   justify-items: center;
-  height: clamp(300px, 70vh, 500px);
+  min-height: clamp(300px, 70vh, 500px);
   position: relative;
   margin: 0.5em 0rem;
 }
@@ -286,7 +286,6 @@ h3 {
   color: black;
   background-color: var(--BOX-COLOR);
   font-size: 1rem;
-
   transition: height 4s, width 4s, font-size 3s, background-color 2s, color 2s,
     transform 5s;
 }
@@ -297,6 +296,34 @@ h3 {
   background-color: pink;
   font-size: 0.6rem;
   transform: rotateZ(360deg) translateX(200px);
+}
+
+/* || TRANSITION-TIMING-FUNCTION */
+.box:hover {
+  width: 800px;
+  transition: width 2s;
+}
+.linear {
+  transition-timing-function: linear;
+}
+.ease {
+  transition-timing-function: ease;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+/* || TRANSITION DELAY PROPERTY */
+.delay-1:hover{
+transition-delay: 1s;
+}
+.delay-2:hover{
+  transition-delay: 2s;
 }
 @media screen and (min-width: 476px) {
   body {
