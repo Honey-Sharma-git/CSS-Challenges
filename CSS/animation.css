@@ -19,11 +19,12 @@ img {
   --BOX-PADDING: 1rem;
   --BOX-BORDER: 5px solid #0000008e;
   --FF: "Open Sans", Sans-serif;
-  --BOX-COLOR: hsla(11, 24%, 72%, 0.5);
+  --BOX-COLOR: hsla(12, 24%, 72%, 0.502);
   --BOX-COLOR-LIGHT: hsl(11, 24%, 90%);
   --LINKS: #c9ada7;
   --OUTLINE: #c9ada7;
-  --UNIMP-TEXT: #9a8c98;
+  /* --UNIMP-TEXT: #9a8c98; */
+  --UNIMP-TEXT: #494949;
   --PLACEHOLDER: #9a8c98;
   --TEXT: #f2e9e4;
   --BG-COLOR: #22223b;
@@ -42,10 +43,13 @@ body {
 a:any-link {
   color: var(--LINKS);
   text-decoration: none;
+  font-size: 1rem;
+  line-height: calc(1.5 * 1rem);
 }
 ol,
 ol li {
   padding-left: 1rem;
+  color:var(--LINKS)
 }
 .backToTop {
   position: fixed;
@@ -54,7 +58,7 @@ ol li {
   z-index: 2;
 }
 aside {
-  background-color: var(--SECTION-COLOR);
+  background-color: var(--BG-COLOR);
   padding: var(--BOX-PADDING);
 }
 section {
@@ -84,9 +88,9 @@ h3 {
   margin: 1rem;
   font-family: var(--FF);
   font-size: 1rem;
-  /* font-size: clamp(0.5rem, 20vh, 1rem); */
   text-align: center;
   color: white;
+  color: black;
   background-color: var(--BOX-COLOR);
   border: var(--BOX-BORDER);
 
@@ -167,7 +171,6 @@ h3 {
     flex-flow: row nowrap;
     justify-content: space-between;
     flex-grow: 1;
-    column-gap: 10px;
   }
   main {
     flex-grow: 1;
