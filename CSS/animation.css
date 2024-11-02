@@ -170,6 +170,44 @@ h3 {
 .matrix {
   transform: matrix(0, 0, 0, 0, 40, 30);
 }
+
+/* || TRANSFORM-ORIGIN PROPERTY */
+.transition {
+  transition: transform 2s;
+}
+.rotate:hover {
+  transform: rotateZ(360deg);
+}
+.center {
+  transform-origin: center;
+}
+.right {
+  transform-origin: right;
+}
+.left {
+  transform-origin: left;
+}
+.top {
+  transform-origin: top;
+}
+.bottom {
+  transform-origin: bottom;
+}
+.bottom-right {
+  transform-origin: bottom right;
+}
+.bottom-left {
+  transform-origin: bottom left;
+}
+.top-left {
+  transform-origin: top left;
+}
+.top-right {
+  transform-origin: top right;
+}
+.shifted-origin {
+  transform-origin: 300px 200px;
+}
 @media screen and (min-width: 476px) {
   body {
     display: flex;
