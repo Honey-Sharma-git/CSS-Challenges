@@ -319,11 +319,57 @@ h3 {
   transition-timing-function: ease-in-out;
 }
 /* || TRANSITION DELAY PROPERTY */
-.delay-1:hover{
-transition-delay: 1s;
+.delay-1:hover {
+  transition-delay: 1s;
 }
-.delay-2:hover{
+.delay-2:hover {
   transition-delay: 2s;
+}
+.box1 {
+  height: 100px;
+  width: 100px;
+  background-color: var(--BOX-COLOR);
+  border: var(--BOX-BORDER);
+  color: black;
+  display: grid;
+  place-content: center;
+
+}
+.box1:hover{
+  transform: skewX(50deg);
+}
+.d3{
+  transition-property:transform;
+  transition-duration: 3s;
+}
+.d5{
+  transition-property:transform;
+  transition-duration: 5s;
+}
+.d10{
+    transition-property:transform;
+  transition-duration: 10s;
+}
+.box2{
+  height: 150px;
+  width: 150px;
+  background-color: var(--BOX-COLOR);
+  border: var(--BOX-BORDER);
+  color: black;
+  display: grid;
+  place-content: center;
+}
+.shorthand1:hover{
+  color:white;
+  transition: color 3s linear 1s;
+}
+.shorthand2:hover{
+  height: 200px;
+  transition: height 5s ease-out 2s;
+}
+.shorthand3:hover{
+  background-color:blue;
+  transition: background-color 7s ease-in-out 1s;
 }
 @media screen and (min-width: 476px) {
   body {
