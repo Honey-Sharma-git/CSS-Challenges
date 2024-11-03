@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* || CSS RESET */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+  /* background-color: hsla(0, 100%, 50%, 0.05); */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+/* || VARIABLES */
+:root {
+  --FF: "Open Sans", Sans-serif;
+  --BOX-COLOR: #e63946;
+  --LINKS: #780000;
+  --TEXT: #fdf0d5;
+  --SECTION-COLOR: #669bbc;
+  --BG-COLOR: #003049;
+}
+/* || GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
