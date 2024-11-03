@@ -27,3 +27,21 @@ img {
 html {
   scroll-behavior: smooth;
 }
+body {
+  border: 1px solid white;
+  background-color: var(--BG-COLOR);
+  padding: 1rem 0rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  color: var(--TEXT);
+}
+main {
+  flex-grow: 1;
+  border: 1px solid white;
+  width: calc(70%-5px);
+}
+aside {
+  border: 1px solid white;
+  width: calc(30%-5px);
+}
