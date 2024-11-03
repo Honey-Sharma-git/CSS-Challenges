@@ -58,7 +58,7 @@ section {
   background-color: var(--SECTION-COLOR);
   min-height: 30vh;
   margin: 1rem 0rem;
-  padding: 0rem 1rem;
+  padding: 0.5rem 1rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 10px;
@@ -68,14 +68,7 @@ h2 {
   padding-left: 1rem;
 }
 /* || FIGURES AND SHAPES */
-@keyframes shape-change {
-  from {
-    border-radius: 0%;
-  }
-  to {
-    border-radius: 50%;
-  }
-}
+
 .square {
   height: 100px;
   width: 100px;
@@ -86,7 +79,17 @@ h2 {
   font-family: var(--FF);
   font-size: 1rem;
   font-weight: bold;
-
+  text-align: center;
+}
+@keyframes shape-change {
+  from {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+.shape-change {
   animation-name: shape-change;
   animation-duration: 2s;
 }
@@ -110,4 +113,20 @@ h2 {
 .to-circle {
   animation-name: to-circle;
   animation-duration: 8s;
+}
+@keyframes roll {
+  0% {
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+.roll {
+  animation-name: roll;
+}
+.d2 {
+  animation-duration: 2s;
+}
+.d6 {
+  animation-duration: 6s;
 }
