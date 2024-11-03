@@ -171,3 +171,46 @@ h2 {
 .linear {
   animation-timing-function: linear;
 }
+@keyframes slide2 {
+  0% {
+    background-color: yellow;
+    transform: translateX(50px);
+  }
+  25% {
+    background-color: blue;
+    transform: translateX(100px);
+  }
+  50% {
+    background-color: green;
+    transform: translateX(150px);
+  }
+  75% {
+    background-color: pink;
+    transform: translateX(200px);
+  }
+  100% {
+    background-color: magenta;
+    transform: translateX(250px);
+  }
+}
+.slide2 {
+  animation-name: slide2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+.none{
+    animation-fill-mode: none;
+}
+.forwards{
+    animation-fill-mode: forwards;
+}
+.backwards{
+    animation-fill-mode: backwards;
+}
+.both{
+    animation-fill-mode: both;
+}
+.delay-2{
+    animation-delay: 2s;
+}
