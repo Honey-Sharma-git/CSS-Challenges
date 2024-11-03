@@ -45,7 +45,7 @@ aside {
   width: calc(30%-5px);
   padding: 0rem 2rem;
   line-height: 25px;
-  color:black;
+  color: black;
 }
 a:any-link {
   color: black;
@@ -59,8 +59,55 @@ section {
   min-height: 30vh;
   margin: 1rem 0rem;
   padding: 0rem 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
 }
 h2 {
   background-color: var(--SECTION-COLOR);
   padding-left: 1rem;
+}
+/* || FIGURES AND SHAPES */
+@keyframes shape-change {
+  from {
+    border-radius: 0%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
+.square {
+  height: 100px;
+  width: 100px;
+  background-color: var(--BOX-COLOR);
+  display: grid;
+  place-content: center;
+  color: var(--TEXT);
+  font-family: var(--FF);
+  font-size: 1rem;
+  font-weight: bold;
+
+  animation-name: shape-change;
+  animation-duration: 2s;
+}
+@keyframes to-circle {
+  0% {
+    border-radius: 0%;
+  }
+  25% {
+    border-top-left-radius: 50%;
+  }
+  50% {
+    border-top-right-radius: 50%;
+  }
+  75% {
+    border-bottom-right-radius: 50%;
+  }
+  100% {
+    border-bottom-left-radius: 50%;
+  }
+}
+.to-circle {
+  animation-name: to-circle;
+  animation-duration: 8s;
 }
