@@ -114,19 +114,28 @@ h2 {
   animation-name: to-circle;
   animation-duration: 8s;
 }
-@keyframes roll {
+@keyframes slide {
   0% {
   }
   100% {
     transform: translateX(200px);
   }
 }
-.roll {
-  animation-name: roll;
+.slide {
+  animation-name: slide;
 }
 .d2 {
   animation-duration: 2s;
 }
 .d6 {
   animation-duration: 6s;
+}
+.count2 {
+  animation-iteration-count: 2;
+}
+.count5 {
+  animation-iteration-count: 5;
+}
+.infinite {
+  animation-iteration-count: infinite;
 }
