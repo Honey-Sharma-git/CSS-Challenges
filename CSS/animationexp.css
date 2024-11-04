@@ -16,12 +16,12 @@ img {
 }
 /* || VARIABLES */
 :root {
-  --FF: "Open Sans", Sans-serif;
-  --BOX-COLOR: #e63946;
-  --LINKS: #780000;
-  --TEXT: #fdf0d5;
-  --SECTION-COLOR: #003049;
   --BG-COLOR: #669bbc;
+  --BOX-COLOR: #e63946;
+  --FF: "Open Sans", Sans-serif;
+  --LINKS: #780000;
+  --SECTION-COLOR: #003049;
+  --TEXT: #fdf0d5;
 }
 /* || GENERAL STYLES */
 html {
@@ -29,23 +29,23 @@ html {
 }
 body {
   background-color: var(--BG-COLOR);
-  padding: 1rem 1rem;
+  color: var(--TEXT);
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  color: var(--TEXT);
-  font-size: 1rem;
   font-family: var(--FF);
+  font-size: 1rem;
+  justify-content: space-between;
+  padding: 1rem 1rem;
 }
 main {
   flex-grow: 1;
   width: calc(70%-5px);
 }
 aside {
-  width: calc(30%-5px);
-  padding: 0rem 2rem;
-  line-height: 25px;
   color: black;
+  line-height: 25px;
+  padding: 0rem 2rem;
+  width: calc(30%-5px);
 }
 a:any-link {
   color: black;
@@ -55,18 +55,18 @@ ol li {
   padding-left: 0.8rem;
 }
 .backToTop {
-  position: fixed;
   bottom: 10px;
+  position: fixed;
   right: 20px;
 }
 section {
   background-color: var(--SECTION-COLOR);
-  min-height: 30vh;
-  margin: 1rem 0rem;
-  padding: 0.5rem 1rem;
   display: flex;
   flex-flow: column nowrap;
   gap: 10px;
+  margin: 1rem 0rem;
+  min-height: 30vh;
+  padding: 0.5rem 1rem;
 }
 h2 {
   background-color: var(--SECTION-COLOR);
@@ -75,16 +75,16 @@ h2 {
 /* || FIGURES AND SHAPES */
 
 .square {
-  height: 100px;
-  width: 100px;
   background-color: var(--BOX-COLOR);
-  display: grid;
-  place-content: center;
   color: var(--TEXT);
+  display: grid;
   font-family: var(--FF);
   font-size: 1rem;
   font-weight: bold;
+  height: 100px;
+  place-content: center;
   text-align: center;
+  width: 100px;
 }
 @keyframes shape-change {
   from {
@@ -194,10 +194,10 @@ h2 {
   }
 }
 .slide2 {
-  animation-name: slide2;
-  animation-duration: 5s;
-  animation-timing-function: linear;
   animation-direction: normal;
+  animation-duration: 5s;
+  animation-name: slide2;
+  animation-timing-function: linear;
 }
 .none{
     animation-fill-mode: none;
