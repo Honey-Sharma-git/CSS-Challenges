@@ -331,3 +331,60 @@ h2 {
 }
 
 /* LOADING ANIMATION EXAMPLE-2 */
+.smallCircle {
+  background-color: var(--SECTION-COLOR);
+  height: 70px;
+  width: 70px;
+
+  border-radius: 50%;
+  position: absolute;
+  animation-name: bigCircleRotation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+.border1 {
+  border: 5px solid var(--SECTION-COLOR);
+  border-left-color: gray;
+  border-right-color: gray;
+  border-top-color: gray;
+}
+.border2 {
+  border: 5px solid gray;
+  border-left-color: var(--SECTION-COLOR);
+  border-right-color: var(--SECTION-COLOR);
+  border-top-color: var(--SECTION-COLOR);
+}
+
+.bigCircle {
+  background-color: var(--SECTION-COLOR);
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  position: relative;
+  animation-name: bigCircleRotation;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+@keyframes bigCircleRotation {
+  to {
+    transform: rotateZ(0deg);
+  }
+  from {
+    transform: rotateZ(360deg);
+  }
+}
+.r-60 {
+  height: 60px;
+  width: 60px;
+}
+.r-45 {
+  height: 45px;
+  width: 45px;
+}
+.loading{
+  background-color: black;
+}
