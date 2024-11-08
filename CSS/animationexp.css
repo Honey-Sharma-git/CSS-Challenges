@@ -385,6 +385,86 @@ h2 {
   height: 45px;
   width: 45px;
 }
-.loading{
+.loading {
   background-color: black;
+}
+/* EXAMPLE-4 STYLES */
+.spot-container {
+  min-height: 100px;
+  background-color: saddlebrown;
+  opacity: 1;
+  animation-name: blur;
+  /*  animation-duration: 10s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite; */
+}
+@keyframes blur {
+  10% {
+    filter: blur(2.9px);
+  }
+  20% {
+    filter: blur(2.8px);
+  }
+  30% {
+    filter: blur(2.7px);
+  }
+  40% {
+    filter: blur(2.6px);
+  }
+  50% {
+    filter: blur(1.5px);
+  }
+  60% {
+    filter: blur(1.4px);
+  }
+  70% {
+    filter: blur(1.3px);
+  }
+  80% {
+    filter: blur(0.2px);
+  }
+  90% {
+    filter: blur(0.1px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+.containerBox {
+  display: flex;
+  place-items: center;
+  column-gap: 10px;
+  color: black;
+  place-content: center;
+}
+.sq {
+  height: 100px;
+  width: 100px;
+  background-color: white;
+  position: relative;
+  display: grid;
+  place-content: center;
+}
+.sq::before {
+  content: "";
+  display: grid;
+  place-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  /* background-color:hsla(0, 0%, 100%, 0.5); */
+  position: absolute;
+  animation-name: blur;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+}
+.image{
+  animation-name:blur;
+  animation-duration:10s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
 }
