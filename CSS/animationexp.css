@@ -430,8 +430,11 @@ h2 {
     filter: blur(0px);
   }
 }
+
 .containerBox {
   display: flex;
+  width: fit-content;
+  padding: 2rem;
   place-items: center;
   column-gap: 10px;
   color: black;
@@ -463,13 +466,30 @@ h2 {
   animation-fill-mode: forwards;
 }
 
-
 /* PLAYBUTTON STYLES */
 .image {
   animation-name: blur;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+.flexContainer {
+  display: flex;
+  place-items: center;
+  column-gap: 10px;
+  color: black;
+  place-content: center;
+}
+.containerBox {
+  display: flex;
+  flex-flow: column;
+  width: fit-content;
+  padding: 2rem;
+  place-items: center;
+  column-gap: 10px;
+  row-gap: 5px;
+  color: white;
+  place-content: center;
 }
 .playButton {
   height: 100px;
@@ -491,20 +511,32 @@ h2 {
 .playButton::before {
   background-color: red;
 }
+
+.playButton::after {
+  background-color: red;
+}
+.playButton:hover::after {
+  background-color: rgb(169, 1, 1);
+  transform: scale(1.1);
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.containerBox:hover {
+  transform: translateY(-10px);
+  transition-property: transform;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+}
 .playButton:hover::before {
-  animation: pulse 1s infinite;
-  animation-timing-function: ease;
+  animation: pulse 1000ms infinite;
 }
 @keyframes pulse {
   0% {
-    transform: scale(0.15);
+    transform: scale(0.95);
     opacity: 0.75;
   }
   100% {
     transform: scale(1.35);
     opacity: 0.25;
   }
-}
-.playButton::after {
-  background-color: red;
 }
