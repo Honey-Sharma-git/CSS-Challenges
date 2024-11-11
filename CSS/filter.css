@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.mainContainer {
+  display: grid;
+  background-color: burlywood;
+  min-height: 95vh;
+  background-image: url("../Image/wallpaper2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 20px;
+  padding: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "a f g d h"
+    "j i c k l"
+    "m b o n e";
+}
+.aside1 {
+  grid-area: a;
+}
+.aside2 {
+  grid-area: b;
+}
+.aside3 {
+  grid-area: c;
+}
+.aside4 {
+  grid-area: d;
+}
+.aside5 {
+  grid-area: e;
+}
+.aside6 {
+  grid-area: f;
+}
+.aside7 {
+  grid-area: g;
+}
+.aside8 {
+  grid-area: h;
+}
+.aside9 {
+  grid-area: i;
+}
+.aside10 {
+  grid-area: j;
+}
+.aside11 {
+  grid-area: k;
+}
+.aside12 {
+  grid-area: l;
+}
+.aside13 {
+  grid-area: m;
+}
+.aside14 {
+  grid-area: n;
+}
+.aside15 {
+  grid-area: o;
+}
+.asideContainer {
+  width: auto;
+  background-color: hsl(0, 0%, 100%, 0.1);
+  display: grid;
+  place-content: center;
+  color: white;
+  backdrop-filter: blur(4px);
+}
+.effect {
+  animation: clearToBlur 6s infinite linear;
+}
+
+@keyframes clearToBlur {
+  0% {
+    backdrop-filter: blur(4px);
+  }
+  50% {
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    backdrop-filter: blur(4px);
+  }
+}
+.card:hover {
+  cursor: pointer;
+  transform: rotateY(360deg);
+  transition: transform 2s;
+}
