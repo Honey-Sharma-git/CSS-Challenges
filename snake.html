@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <style>
+      .area {
+        /* position: relative; */
+        height: 200px;
+        width: 600px;
+        background-color: lightblue;
+      }
+      .box {
+        /* position: absolute; */
+        width: 20px;
+        aspect-ratio: 1;
+        background-color: black;
+        color: white;
+        transform-origin: center;
+      }
+      /*   .box:hover {
+        transform: rotateZ(90deg);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <div class="box">></div>
+    </div>
+    <script>
+      //Add event listeners:
+      document.body.addEventListener("keydown", (event) => {
+        if (event.key === "ArrowRight") {
+          clearInterval(intervalId);
+          moveR();
+        } else if (event.key === "ArrowLeft") {
+          clearInterval(intervalId);
+          moveL();
+        } else if (event.key === "ArrowDown") {
+          clearInterval(intervalId);
+          moveD();
+        } else if (event.key === "ArrowUp") {
+          clearInterval(intervalId);
+          moveU();
+        }
+      });
+      //Select box:
+      const box = document.getElementsByClassName("box");
+      //Initial position:
+      let posX = 0;
+      let posY = 0;
+      //Initial angle:
+      let angle = 0;
+      //interval id:
+      let intervalId;
+      function moveR() {
+        intervalId = setInterval(() => {
+          if (posX < 580) {
+            posX++;
+            box[0].style.transform = `translate(${posX}px, ${posY}px)`;
+            box[0].style.transform = `rotateZ(${90} deg)`;
+          }
+        }, 10);
+      }
+      function moveD() {
+        intervalId = setInterval(() => {
+          if (posY < 180) {
+            posY++;
+            box[0].style.transform = `translate(${posX}px, ${posY}px)`;
+          }
+        }, 10);
+      }
+      function moveU() {
+        intervalId = setInterval(() => {
+          if (posY > 0) {
+            posY--;
+            box[0].style.transform = `translate(${posX}px, ${posY}px)`;
+          }
+        }, 10);
+      }
+      function moveL() {
+        intervalId = setInterval(() => {
+          if (posX > 0) {
+            posX--;
+            box[0].style.transform = `translate(${posX}px, ${posY}px)`;
+          }
+        }, 10);
+      }
+    </script>
+  </body>
+</html>

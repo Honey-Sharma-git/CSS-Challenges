@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Form</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+        /* outline: 1px solid red; */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        min-height: 100vh;
+        display: grid;
+        place-content: center;
+        background-color: rgb(1, 1, 63);
+      }
+      .input-group {
+        position: relative;
+        width: 500px;
+        line-height: 80px;
+      }
+
+      .input-field {
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 2rem;
+        z-index: 1;
+        outline: none;
+        color: white;
+        font-size: 2rem;
+      }
+      .input-label {
+        position: absolute;
+        font-size: 1.5rem;
+        color: white;
+        padding-left: 30px;
+        background-color: black;
+        z-index: 2;
+        padding: 0 0 0 25px;
+      }
+      .input-field:focus,
+      .input-field:valid {
+        border: 2px solid green;
+        color: green;
+      }
+      .input-field:focus + .input-label,
+      .input-field:valid + .input-label {
+        transform: translate(-10px, -42px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="input-group">
+      <input type="text" class="input-field" required />
+      <label for="" class="input-label">First name</label>
+    </div>
+    <script>
+      /*  //Select elements:
+        const buttonElement = document.getElementById("btn1");
+        const labelElement = document.getElementById("lb1");
+        const inputElement = document.getElementById("inp1");
+
+        //Add event listener:
+        inputElement.addEventListener("focus", () => {
+          labelElement.classList.add("focus");
+        });
+        labelElement.addEventListener("click", () => {
+          labelElement.classList.add("focus"); 
+        });
+        
+        inputElement.addEventListener("blur", () => {
+          labelElement.classList.remove("focus");
+        }); */
+    </script>
+  </body>
+</html>
